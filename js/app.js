@@ -1,3 +1,4 @@
+import '../css/app.scss';
 const toggle = document.querySelector('.switch input');
 const pointer = document.querySelector('.pointer');
 const nonono = document.querySelector('.nonono');
