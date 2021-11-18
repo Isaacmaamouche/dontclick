@@ -11,7 +11,7 @@ const cursors = {
     fu : '🖕'
 };
 
-let attempt = 3;
+let attempt = 0;
 
 const unclick = function(){
     attempt++;
