@@ -58,51 +58,6 @@ $main_color: darkred;
     }
 }
 
-.rightclick-animation{
-    animation: 5s rightclick forwards alternate;
-}
-
-@keyframes rightclick {
-    0%{
-        transform: translate(100%, 0%);
-        top: 75%;
-        right: 0%;  
-    }
-    10%{
-        transform: translate(50%, 50%);
-        top: 50%;
-        right: 50%;
-    }
-    25%{
-        transform: translate(50%, 50%);
-        top: 50%;
-        right: 50%;
-    }
-    30%{
-        top: calc(50% + 90px);
-        right: 45%;
-    }
-    35%{
-        top: calc(50% + 90px);
-        right: 45%;
-    }
-    45%{
-        transform: translate(50%, 50%);
-        top: calc(50% + 90px);
-        right: 45%;
-    }
-    50%{
-        transform: translate(50%, 50%);
-        top: 50%;
-        right: 50%;
-    }
-    100%{
-        transform: translate(50%, 50%);
-        top: 50%;
-        right: 50%;
-    }
-}
-
 .nonono{
     position: absolute;
     opacity: 0;
@@ -204,7 +159,7 @@ $main_color: darkred;
      position: absolute;
      top: 50%;
      left: 50%;
-     transform: translate(0%, 70%);
+     transform: translate(0%, calc(50% - 10px));
      opacity: 0;
      li{
         padding: 4px 4px 4px 8px;
@@ -232,25 +187,70 @@ $main_color: darkred;
 @keyframes menu {
     0%{
         opacity: 0;
-        transform:translate(-50%, 70%);
+        transform:translate(-50%, calc(50% - 10px));
     }
     12%{
         opacity: 0;
-        transform:translate(-50%, 70%);
+        transform:translate(-50%, calc(50% - 10px));
     }
     13%{
         opacity: 1;
-        transform:translate(0%, 70%);
+        transform:translate(0%, calc(50% - 10px));
     }
     34%{
         opacity: 1;
-        transform:translate(0%, 70%);
+        transform:translate(0%, calc(50% - 10px));
     }
     35%{
         opacity: 0;
-        transform:translate(0%, 70%);
+        transform:translate(0%, calc(50% - 10px));
     }
     100%{
         display: none;
+    }
+}
+
+.rightclick-animation{
+    animation: 5s rightclick forwards alternate;
+}
+
+@keyframes rightclick {
+    0%{
+        transform: translate(100%, 0%);
+        top: 75%;
+        right: 0%;  
+    }
+    10%{
+        transform: translate(50%, 50%);
+        top: 50%;
+        right: 50%;
+    }
+    25%{
+        transform: translate(50%, 50%);
+        top: 50%;
+        right: 50%;
+    }
+    30%{
+        top: calc(50% + 70px);
+        right: 45%;
+    }
+    35%{
+        top: calc(50% + 70px);
+        right: 45%;
+    }
+    45%{
+        transform: translate(50%, 50%);
+        top: calc(50% + 70px);
+        right: 45%;
+    }
+    50%{
+        transform: translate(50%, 50%);
+        top: 50%;
+        right: 50%;
+    }
+    100%{
+        transform: translate(50%, 50%);
+        top: 50%;
+        right: 50%;
     }
 }
