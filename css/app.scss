@@ -52,7 +52,7 @@ $main_color: darkred;
         right: 0%;
     }
     to{
-        transform: translate(50%, 50%);
+        transform: translate(50%, 0%);
         top:50%;
         right: 50%;
     }
@@ -60,10 +60,11 @@ $main_color: darkred;
 
 .nonono{
     position: absolute;
+    height: 32px;
     opacity: 0;
     top: 50%;
     left:50%;
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -100%) rotate(0deg);
     z-index: 1;
 
 }
@@ -74,28 +75,28 @@ $main_color: darkred;
 @keyframes nonono {
     0%{
         opacity: 0;
-        transform: translate(-50%, -50%) rotate(-15deg);
+        transform: translate(-50%, -100%) rotate(-15deg);
     }
     10%{
         opacity:1;
-        transform: translate(-50%, -120%) rotate(15deg);
+        transform: translate(-50%, calc(-120% - 32px)) rotate(15deg);
     }
     20%{
-        transform: translate(-50%, -120%) rotate(-15deg);
+        transform: translate(-50%, calc(-120% - 32px)) rotate(-15deg);
     }
     40%{
-        transform: translate(-50%, -120%) rotate(15deg);
+        transform: translate(-50%, calc(-120% - 32px)) rotate(15deg);
     }
     60%{
-        transform: translate(-50%, -120%) rotate(-15deg);
+        transform: translate(-50%, calc(-120% - 32px)) rotate(-15deg);
     }
     80%{
         opacity:1;
-        transform: translate(-50%, -120%) rotate(0deg);
+        transform: translate(-50%, calc(-120% - 32px)) rotate(0deg);
     }
     100%{
         opacity:0;
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -100%) rotate(0deg);
     }
 }
 
@@ -221,35 +222,35 @@ $main_color: darkred;
         right: 0%;  
     }
     10%{
-        transform: translate(50%, 50%);
+        transform: translate(50%, 0%);
         top: 50%;
         right: 50%;
     }
     25%{
-        transform: translate(50%, 50%);
+        transform: translate(50%, 0%);
         top: 50%;
         right: 50%;
     }
     30%{
-        top: calc(50% + 70px);
+        top: calc(50% + 90px);
         right: 45%;
     }
     35%{
-        top: calc(50% + 70px);
+        top: calc(50% + 90px);
         right: 45%;
     }
     45%{
-        transform: translate(50%, 50%);
-        top: calc(50% + 70px);
+        transform: translate(50%, 0%);
+        top: calc(50% + 90px);
         right: 45%;
     }
     50%{
-        transform: translate(50%, 50%);
+        transform: translate(50%, 0%);
         top: 50%;
         right: 50%;
     }
     100%{
-        transform: translate(50%, 50%);
+        transform: translate(50%, 0%);
         top: 50%;
         right: 50%;
     }
